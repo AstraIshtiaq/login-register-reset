@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/sregister.css">
+    <title>Register page</title>
+  </head>
+  <body>
+    <div class="cont">
+      <h1>Create New account</h1>
+      <img src="../img/register.png" alt="" width="150" />
+      <!-- Register form  -->
+      <form>
+        <label for="f-name">First name</label><br />
+        <input
+          type="text"
+          name="f-name"
+          required
+          placeholder="Enter your First name"
+        /><br />
+        <label for="l-name">Last name</label><br />
+        <input
+          type="text"
+          name="l-name"
+          required
+          placeholder="Enter your last name"
+        /><br />
+        <label for="dob">Date of Birth:</label> <br/>
+        <input type="date" id="dob" name="dob"> <br/>
+        
+      <div class="gender">
+        <label for="gender">Gender</label><br />
+        <select name="gender" required>
+          <option value="" disabled selected>Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select><br />
+        </div>
+
+        <label for="phone">Enter Number</label><br />
+        <input type="number" placeholder="Enter your phone number" /><br />
+
+        <label for="mail">Enter Email</label><br />
+        <input type="email" placeholder="Enter your email" /><br />
+
+        <label for="pass">Enter Password</label><br />
+        <input
+          type="password"
+          name="pass"
+          required
+          placeholder="Enter your password"
+        /><br />
+        <label for="cpass">Enter Confirm Password</label><br />
+        <input
+          type="password"
+          name="cpass"
+          required
+          placeholder="Enter your Confirm Password"
+        /><br />
+        <input type="submit" value="Register" />
+      </form>
+
+      <p>
+        Already have an account? 
+        <a href="../index.html">Signup</a>
+      </p>
+    </div>
+  </body>
+</html>
